@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Indie+Flower&family=Inter&family=Passion+One&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+img{
+    width: 100px
+}
+.cabecalho{
+    display: flex;
+    gap: 2.4rem;
+    margin: 40px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    padding-left: 150px;
+}
+body{
+    background-color: #850000;
+}
+.campo{
+    margin-top: 1em;
+    display: grid;
+    gap: 25px;
+    
+}
+.campo label{
+    margin-bottom: 0.2em;
+}
+form{
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    width: 30%;
+}
+
+.tiposCachorrosQuentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items:stretch;
+}
+.tipo{
+    background-color: #E4E4E4;
+    
+}
+.produtos{
+    display: flex;
+}
+input[type=button]{
+    background-color:#E4E4E4;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;   
+    width: 80%;
+    height: 45px;
+}
+input[type=text]{
+    background-color:#E4E4E4;
+    border: none;
+    border-radius: 10px;  
+    width: 90%;
+    height: 45px;
+    padding-left: 25px;
+}
+
+#submit #btn{
+    background-color:#000000;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px;  
+    color: rgb(255, 255, 255);
+}
+#submit{
+    padding-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+#opcao{
+    display: flex;
+    gap: 30px;
+}
+#tituloII{
+    width: 100%;
+}
+#titulo{
+    display: grid;
+}

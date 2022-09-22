@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogão da Praça</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="imgs/dogao.png" alt="um belo cachorro quente">
+        <div id="titulo">
+            <h1>Dogão da Praça</h1>
+            <p>Novo pedido</p>
+        </div>
+    </div>
+    <main>
+        <form id="form1">
+            <div class="campo">
+                <label><b>Nome do cliente:</b></label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="campo">
+                <label><b>É dogão personalizado?</b></label>
+                <div id="opcao">
+                    <div id="sim">
+                        <input onclick= "mostrarIngredientes()" type="radio" name="opcao" value="sim">
+                        <label for="sim">Sim</label>
+                    </div>
+                    <div id="nao">
+                        <input onclick= "mostrarCardapio()" type="radio" name="opcao" value="nao">
+                        <label for="nao">Não</label>
+                    </div>
+                </div>
+            </div>
+            <div id="sessaoIngredientes">
+                <div class="campo">
+                    <label><b>Ingredientes:</b></label>
+                    <label>
+                        <input type="text" name="ingredientes">
+                    </label>
+                </div>
+                <select name="opcions-personalizado" multiple id="opcao">
+                    <option value=""></option>
+                    <option value="opcao1">Salsicha</option>
+                    <option value="opcao2">Maionese</option>
+                    <option value="opcao3">batata palha</option>
+                    <option value="opcao4">catupiry</option>
+                    <option value="opcao5">cheddar</option>
+                    <option value="opcao6">Carne</option>
+                    <option value="opcao7">Pate de frango</option>
+                    <option value="opcao8">Vinagrete</option>
+                    <option value="opcao9">Katchup</option>
+                </select>
+            </div>
+            <div id= "sessaoCardapio">
+                <label><b>Cardapio:</b></label>
+                <select name="opcions-cardapio" multiple id="opcao2">
+                    <option value=""></option>
+                    <option value="6.00" nome ="Salsicha, Maionese, Katchup">Tradicional</option>
+                    <option value="6.50" nome="Salsicha, Maionese, Katchup, vinagrete">Dogão Simplão</option>
+                    <option value="6.50" nome="batata palha, Salsicha, Maionese, Katchup, vinagrete">Dogão Simples</option>
+                    <option value="7.00" nome= "Salsicha, Maionese, Katchup, vinagrete, catupiry,batata palha">Dogão Simples II</option>
+                    <option value="7.50" nome="Salsicha, Maionese, Katchup, vinagrete, cheddar, Batata Palha">Dogão cheddarzao</option>
+                    <option value="7.70" nome = "Salsicha, Maionese, Katchup, vinagrete, Carne, cheddar">Dogão socarne</option>
+                    <option value="7.50"nome="Salsicha, Maionese, Katchup, vinagrete,Pate de frango, catupiry">Dogão de frango</option>
+                    <option value="8.00" nome="Salsicha, Maionese, Katchup, vinagrete,Pate de frango, catupiry, Carne">Dogão x-tudão</option>
+                </select>
+            </div>
+            <div id="submit">
+                <button onclick="somaValor()"id="btn">Adicionar ao Pedido</button> 
+            </div>
+        </form>
+        <form class="tiposCachorrosQuentes">
+            <div id="tituloII">
+                <p><b>Items do pedido</b></p>
+            </div>
+            <div id="total">
+                <label><b id="total-valor">total: R$<span></span></b></label>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="script.js" defer></script>
+
+</html>
